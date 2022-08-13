@@ -1,3 +1,7 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .row-header {
     margin: 0 auto;
     padding: 0 auto;
@@ -26,4 +30,10 @@
     font-size: 80%;
     margin: 0;
     color: #0f0f0f;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
 }
