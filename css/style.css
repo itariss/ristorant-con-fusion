@@ -2,6 +2,15 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+body {
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background: #004A99;
+}
+
 .row-header {
     margin: 0 auto;
     padding: 0 auto;
