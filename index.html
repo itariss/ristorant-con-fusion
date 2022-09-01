@@ -83,8 +83,15 @@
 							senses!
 						</p>
 					</div>
-					<div class="col-12 col-sm align-self-center">
-						<img src="./img/logo.png" alt="" />
+					<div
+						class="d-md-flex col-12 col-sm-6 justify-content-md-between align-items-md-center"
+					>
+						<img class="col col-sm-6" src="./img/logo.png" alt="" />
+						<a
+							href="#reserve-form"
+							class="btn btn-warning col col-sm-6"
+							>Reserve Table</a
+						>
 					</div>
 				</div>
 			</div>
@@ -103,11 +110,14 @@
 							class="d-flex mr-3 img-thumbnail align-self-center"
 						/>
 						<div class="media-body">
-							<h2 class="mt-0">Uthappizza</h2>
-							<span class="badge badge-danger">HOT</span>
-							<span class="badge badge-pill badge-secondary"
-								>$4.99</span
-							>
+							<h2 class="mt-0">
+								Uthappizza
+								<span class="badge badge-danger">HOT</span>
+								<span class="badge badge-pill badge-secondary"
+									>$4.99</span
+								>
+							</h2>
+
 							<p class="d-none d-sm-block">
 								A unique combination of Indian Uthappam
 								(pancake) and Italian pizza, topped with
@@ -121,17 +131,31 @@
 			</div>
 
 			<div class="row row-content align-items-center">
-				<div class="col-12 col-sm-4 order-sm-last col-md-3">
+				<div class="col-12 col-sm-4 order-sm-first col-md-3">
 					<h3>This Month's Promotions</h3>
 				</div>
-				<div class="col col-sm col-md">
-					<h2>Weekend Grand Buffet</h2>
-					<p class="d-none d-sm-block">
-						Featuring mouthwatering combinations with a choice of
-						five different salads, six enticing appetizers, six main
-						entrees and five choicest desserts. Free flowing bubbly
-						and soft drinks. All for just $19.99 per person
-					</p>
+				<div class="col col-sm col-md order-sm-last">
+					<div class="media">
+						<img
+							src="./img/buffet.png"
+							alt=""
+							class="d-flex mr-3 img-thumbnail order-last"
+						/>
+						<div class="media-body">
+							<h2 class="mt-0">
+								Weekend Grand Buffet
+								<span class="badge badge-danger">NEW</span>
+							</h2>
+
+							<p class="d-none d-sm-block">
+								Featuring mouthwatering combinations with a
+								choice of five different salads, six enticing
+								appetizers, six main entrees and five choicest
+								desserts. Free flowing bubbly and soft drinks.
+								All for just $19.99 per person
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -158,6 +182,133 @@
 							</p>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-8 offset-md-2 mb-4">
+			<div id="reserve-form" class="card">
+				<div class="card-header text-white bg-warning">
+					<h3>Reserve a Table</h3>
+				</div>
+				<div class="card-body">
+					<form action="">
+						<div class="row form-group">
+							<label class="col-md-2 col-form-label" for=""
+								>Number of Guests</label
+							>
+							<div class="col-md-10 row justify-content-start">
+								<div class="col-2 col-md-1 form-check">
+									<input
+										class="form-check"
+										id="one-guest"
+										name="one-guest"
+										type="radio"
+										value="option1"
+									/>
+									<label
+										for="one-guest"
+										class="form-check-label"
+										>1</label
+									>
+								</div>
+								<div class="col-2 col-md-1 form-check">
+									<input
+										class="form-check"
+										id="two-guests"
+										name="two-guests"
+										type="radio"
+										value="option2"
+									/>
+									<label
+										for="two-guests"
+										class="form-check-label"
+										>2</label
+									>
+								</div>
+								<div class="col-2 col-md-1 form-check">
+									<input
+										class="form-check"
+										id="three-guests"
+										name="three-guests"
+										type="radio"
+										value="option3"
+									/>
+									<label
+										for="three-guests"
+										class="form-check-label"
+										>3</label
+									>
+								</div>
+								<div class="col-2 col-md-1 form-check">
+									<input
+										class="form-check"
+										id="four-guests"
+										name="four-guests"
+										type="radio"
+										value="option4"
+									/>
+									<label
+										for="four-guests"
+										class="form-check-label"
+										>4</label
+									>
+								</div>
+								<div class="col-2 col-md-1 form-check">
+									<input
+										class="form-check"
+										id="five-guests"
+										name="five-guests"
+										type="radio"
+										value="option5"
+									/>
+									<label
+										for="five-guests"
+										class="form-check-label"
+										>5</label
+									>
+								</div>
+								<div class="col-2 col-md-1 form-check">
+									<input
+										class="form-check"
+										id="six-guests"
+										name="six-guests"
+										type="radio"
+										value="option6"
+									/>
+									<label
+										for="six-guests"
+										class="form-check-label"
+										>6</label
+									>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="" class="col-md-2 col-form-label"
+								>Date and Time</label
+							>
+							<div class="col-md-10">
+								<input
+									type="text"
+									class="form-control col-md-2 d-inline"
+									placeholder="Date"
+								/>
+								<input
+									type="text"
+									class="form-control col-md-2 d-inline"
+									placeholder="Time"
+								/>
+							</div>
+						</div>
+						<div class="form-group">
+							<button
+								class="btn btn-primary offset-md-2"
+								type="submit"
+							>
+								Reserve
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
