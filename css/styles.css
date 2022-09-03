@@ -32,7 +32,7 @@ body {
 .jumbotron {
     padding: 70px 30px 70px 30px;
     margin: 0 auto;
-    background-color: #84a6c5;
+    background: #84a6c5;
 }
 
 .address {
@@ -45,6 +45,21 @@ body {
     border: 1px solid #ddd;
     border-top: none;
     padding: 10px;
+}
+
+.carousel {
+    background: #84a6c5;
+}
+
+.carousel-item {
+    height: 18.75rem;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 18.75rem;
 }
 
 h1,
