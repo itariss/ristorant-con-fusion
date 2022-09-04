@@ -11,6 +11,22 @@ $carousel-item-height: 18.75rem;
 	font-family: "Courier New", Courier, monospace;
 }
 
+// Modal Styling
+.modal {
+	.modal-header {
+		background: $background-dark;
+		h3,
+		h4,
+		button {
+			color: floralwhite;
+		}
+	}
+
+	.modal-body {
+		background-color: $background-pale;
+	}
+}
+
 @mixin zero-margin($pad-up-dn: 0, $pad-left-right: 0) {
 	margin: 0 auto;
 	padding: $pad-up-dn $pad-left-right;

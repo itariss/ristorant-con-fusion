@@ -69,7 +69,7 @@
 						</li>
 					</ul>
 					<span class="navbar-text"
-						><a data-toggle="modal" data-target="#loginModal"
+						><a id="linkLogin"
 							><span class="fa fa-sign-in"></span>Login</a
 						></span
 					>
@@ -83,16 +83,12 @@
 					<div class="card">
 						<div class="modal-header">
 							<h3>Reserve a Table</h3>
-							<button
-								type="button"
-								class="close"
-								data-dismiss="modal"
-							>
+							<button type="button" class="close">
 								&#x24E7;
 							</button>
 						</div>
 						<div class="modal-body">
-							<form action="">
+							<form ></form>
 								<div class="row form-group">
 									<label
 										class="col-md-2 col-form-label"
@@ -259,13 +255,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h4 class="modal-title">Login</h4>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-						>
-							&#x24E7;
-						</button>
+						<button type="button" class="close">&#x24E7;</button>
 					</div>
 					<div class="modal-body">
 						<form action="">
@@ -280,6 +270,7 @@
 										class="form-control"
 										id="exampleInputEmail"
 										placeholder="Email"
+										required
 									/>
 								</div>
 								<div class="form-group col-sm-4">
@@ -292,6 +283,7 @@
 										class="form-control"
 										id="exampleInputPassword"
 										placeholder="Password"
+										required
 									/>
 								</div>
 								<div class="col-sm-auto">
@@ -309,7 +301,7 @@
 							<div class="form-row">
 								<button
 									class="btn btn-secondary btn-sm ml-auto"
-									data-dimmiss="modal"
+									type="close"
 								>
 									Cancel
 								</button>
@@ -341,8 +333,7 @@
 						<img class="col col-sm-6" src="./img/logo.png" alt="" />
 						<a
 							class="btn btn-warning col col-sm-6"
-							data-toggle="modal"
-							data-target="#formModal"
+							id="buttonReserve"
 							>Reserve Table</a
 						>
 					</div>
@@ -629,6 +620,30 @@
 			$(document).ready(() => {
 				$("#myCarousel").carousel({ interval: 2000 });
 
+				//Modal handlers
+
+				// Modal Reserve Form
+				$("#buttonReserve").click(() => {
+					$("#formModal").modal("toggle");
+				});
+
+				//Modal Login
+
+				$("#linkLogin").click(() => {
+					$("#loginModal").modal("toggle");
+				});
+
+				//Close Modal
+
+				$(".close").click(() => {
+					$(".modal").modal("hide");
+				});
+
+				$("[type=close]").click(() => {
+					$(".modal").modal("hide");
+				});
+
+				// Carousel Handler
 				$("#carouselButton").click(() => {
 					if (
 						$("#carouselButton")

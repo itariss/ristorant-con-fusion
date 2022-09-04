@@ -2,6 +2,18 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+.modal .modal-header {
+  background: #004a99;
+}
+.modal .modal-header h3,
+.modal .modal-header h4,
+.modal .modal-header button {
+  color: floralwhite;
+}
+.modal .modal-body {
+  background-color: #84a6c5;
+}
+
 .row-reader {
   margin: 0 auto;
   padding: 0 0;
