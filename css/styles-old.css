@@ -1,60 +1,73 @@
 * {
 	font-family: "Courier New", Courier, monospace;
 }
-.row-reader {
-	margin: 0 auto;
-	padding: 0 0;
-}
-.row-content {
-	margin: 0 auto;
-	padding: 50px 0;
-	border-bottom: 1px ridge;
-	min-height: 25rem;
-}
-.jumbotron {
-	margin: 0 auto;
-	padding: 4.375 0;
-	color: #84a6c5;
-}
-.footer {
-	background: #9fb9a9;
-	margin: 0 auto;
-	padding: 1.25rem 0;
-}
-address {
-	font-size: 80%;
-	margin: 0;
-	color: black;
-}
+
 body {
-	padding-top: 3.125rem;
+	padding-top: 50px;
 	z-index: 0;
 }
+
 .navbar-dark {
-	background-color: #004a99;
+	background: #004a99;
 }
+
+.row-header {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.row-content {
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 400px;
+}
+
+.footer {
+	background: #9fb9a9;
+	margin: 0;
+	padding: 20px 0 20px 0;
+}
+
+.jumbotron {
+	padding: 70px 30px 70px 30px;
+	margin: 0 auto;
+	background: #84a6c5;
+}
+
+.address {
+	font-size: 80%;
+	margin: 0;
+	color: #0f0f0f;
+}
+
 .tab-content {
 	border: 1px solid #ddd;
 	border-top: none;
-	padding: 0.625rem;
+	padding: 10px;
 }
+
 .carousel {
-	background: #004a99;
+	background: #84a6c5;
 }
-.carousel .carousel-item {
+
+.carousel-item {
 	height: 18.75rem;
 }
-.carousel .carousel-item img {
+
+.carousel-item img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	min-height: 18.75rem;
 }
+
 #carouselButton {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 }
+
 h1,
 h2,
 h3 {
