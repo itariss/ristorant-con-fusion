@@ -1,69 +1,75 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+	font-family: "Courier New", Courier, monospace;
 }
 
 body {
-    padding-top: 50px;
-    z-index: 0;
+	padding-top: 50px;
+	z-index: 0;
 }
 
 .navbar-dark {
-    background: #004A99;
+	background: #004a99;
 }
 
 .row-header {
-    margin: 0 auto;
-    padding: 0 auto;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
 .row-content {
-    margin: 0 auto;
-    padding: 50px 0 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 400px;
+	margin: 0 auto;
+	padding: 50px 0 50px 0;
+	border-bottom: 1px ridge;
+	min-height: 400px;
 }
 
 .footer {
-    background: #9fb9a9;
-    margin: 0;
-    padding: 20px 0 20px 0;
+	background: #9fb9a9;
+	margin: 0;
+	padding: 20px 0 20px 0;
 }
 
 .jumbotron {
-    padding: 70px 30px 70px 30px;
-    margin: 0 auto;
-    background: #84a6c5;
+	padding: 70px 30px 70px 30px;
+	margin: 0 auto;
+	background: #84a6c5;
 }
 
 .address {
-    font-size: 80%;
-    margin: 0;
-    color: #0f0f0f;
+	font-size: 80%;
+	margin: 0;
+	color: #0f0f0f;
 }
 
 .tab-content {
-    border: 1px solid #ddd;
-    border-top: none;
-    padding: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 10px;
 }
 
 .carousel {
-    background: #84a6c5;
+	background: #84a6c5;
 }
 
 .carousel-item {
-    height: 18.75rem;
+	height: 18.75rem;
 }
 
 .carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 18.75rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 18.75rem;
+}
+
+#carouselButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: 600;
+	font-weight: 600;
 }
