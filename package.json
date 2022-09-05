@@ -9,15 +9,26 @@
 		"lite": "lite-server",
 		"scss": "sass --update --style=expanded css/styles.scss:css/styles.css",
 		"watch:scss": "onchange 'css/*.scss' -- npm run scss",
-		"watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+		"watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+		"clean": "rimraf dist",
+		"copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+		"imagemin": "imagemin img/* -o dist/img",
+		"usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+		"build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
 	},
 	"author": "Italo Rissardi",
 	"license": "ISC",
 	"devDependencies": {
+		"cssmin": "^0.4.3",
+		"htmlmin": "^0.0.7",
 		"lite-server": "^2.3.0",
 		"onchange": "^3.3.0",
 		"parallelshell": "^3.0.2",
-		"sass": "^1.54.8"
+		"rimraf": "^2.6.2",
+		"sass": "^1.54.8",
+		"uglifyjs": "^2.4.11",
+		"usemin-cli": "^0.5.1"
+		
 	},
 	"dependencies": {
 		"bootstrap": "^4.0.0",
@@ -25,7 +36,6 @@
 		"font-awesome": "^4.7.0",
 		"jquery": "^3.3.1",
 		"popper.js": "^1.12.9",
-		"request": "^2.88.2",
-		"sass": "^1.54.8"
+		"request": "^2.88.2"
 	}
 }

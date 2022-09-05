@@ -1,31 +1,31 @@
-$(document).ready(() => {
+$(document).ready(function () {
 	$("#myCarousel").carousel({ interval: 2000 });
 
 	//Modal handlers
 
 	// Modal Reserve Form
-	$("#buttonReserve").click(() => {
+	$("#buttonReserve").click(function () {
 		$("#formModal").modal("toggle");
 	});
 
 	//Modal Login
 
-	$("#linkLogin").click(() => {
+	$("#linkLogin").click(function () {
 		$("#loginModal").modal("toggle");
 	});
 
 	//Close Modal
 
-	$(".close").click(() => {
+	$(".close").click(function () {
 		$(".modal").modal("hide");
 	});
 
-	$("[type=close]").click(() => {
+	$("[type=close]").click(function () {
 		$(".modal").modal("hide");
 	});
 
 	// Carousel Handler
-	$("#carouselButton").click(() => {
+	$("#carouselButton").click(function () {
 		if ($("#carouselButton").children("span").hasClass("fa-pause")) {
 			$("#myCarousel").carousel("pause");
 			$("#carouselButton").children("span").removeClass("fa-pause");
@@ -40,6 +40,6 @@ $(document).ready(() => {
 
 //Tooltip script
 
-// $(document).ready(() => {
+// $(document).ready(function()  {
 // 	$("[data-toggle='tooltip']").tooltip();
 // });

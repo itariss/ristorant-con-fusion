@@ -9,10 +9,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -157,23 +159,24 @@
                             </select>
                         </div>
                     </div>
-                        
+
                     <div class="form-group row">
                         <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
                         <div class="col-md-10">
                             <textarea id="feedback" name="feedback" class="form-control" rows="12"></textarea>
                         </div>
-                    </div><div class="form-group row">
+                    </div>
+                    <div class="form-group row">
                         <div class="offset-md-2 col md-10">
-                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                            <button type="submit" class="btn btn-primary">
+                                Send Feedback
+                            </button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
         <div class="col-12 col-md"></div>
-    </div>
     </div>
 
     <footer class="footer">
@@ -224,10 +227,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+	<!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/scripts.js"></script>
+	<!-- endbuild -->
 
 </body>
 
