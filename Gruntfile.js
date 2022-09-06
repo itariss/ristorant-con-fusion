@@ -138,7 +138,8 @@ module.exports = function (grunt) {
 		htmlmin: {
 			dist: {
 				options: {
-					collapseWhiteSpaces: true
+					removeComments: true,
+					collapseWhitespace: true
 				},
 				files: {
 					"dist/index.html": "dist/index.html",
