@@ -149,7 +149,7 @@ module.exports = function (grunt) {
 			}
 		}
 	});
-	grunt.registerTask("css", ["sass"]);
+	grunt.registerTask("css", ["dart-sass"]);
 	grunt.registerTask("default", ["browserSync", "watch"]);
 	grunt.registerTask("build", [
 		"clean",
