@@ -95,6 +95,6 @@ gulp.task(
 	gulp.series("clean", gulp.parallel("imagemin", "copyfonts", "usemin"))
 );
 
-gulp.task("deploy", function () {
+gulp.task("deploy", gulp.series("build"), function () {
 	return gulp.src("./dist/**/*").pipe(deploy());
 });
