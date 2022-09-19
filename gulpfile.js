@@ -12,6 +12,8 @@ var gulp = require("gulp"),
 	flatmap = require("gulp-flatmap"),
 	htmlmin = require("gulp-htmlmin");
 
+var deploy = require("gulp-gh-pages");
+
 gulp.task("sass", function () {
 	return gulp
 		.src("./css/*.scss")
@@ -92,3 +94,7 @@ gulp.task(
 	"build",
 	gulp.series("clean", gulp.parallel("imagemin", "copyfonts", "usemin"))
 );
+
+gulp.task("deploy", function () {
+	return gulp.src("./dist/**/*").pipe(deploy());
+});
